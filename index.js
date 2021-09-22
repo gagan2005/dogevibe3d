@@ -221,7 +221,10 @@ document.getElementById("but").addEventListener("click", () => {
   
   if (mobileCheck()===true) partyVariation = 10;
   else partyVariation = 200;
+  
   Start();
+  document.getElementById('video').play();
+  document.getElementById('video2').play();
 });
 
 // App();
