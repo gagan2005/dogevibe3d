@@ -162,11 +162,12 @@ scene.add( plane );
   setTimeout(randomLights, 1000);
 }
 function Start(){
-  document.getElementById('audio').play();
+ 
   App();
 }
 
 document.getElementById('but').addEventListener('click',()=>{
+  document.getElementById('audio').play();
   document.getElementById('but').style.display='none';
   Start();
   
