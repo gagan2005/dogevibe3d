@@ -200,7 +200,7 @@ function App() {
     party.confetti(document.getElementById("app"), {
       shapes: ["square", "circle", "roundedRectangle"],
       count: party.variation.range(partyVariation, 2 * partyVariation),
-      size: party.variation.range(0.1, 0.3),
+      size: party.variation.range(0.3, 0.5),
     });
     setTimeout(partyy, 2000);
   }
@@ -220,7 +220,7 @@ document.getElementById("but").addEventListener("click", () => {
   document.getElementById("but").style.display = "none";
   
   if (mobileCheck()===true) partyVariation = 10;
-  else partyVariation = 200;
+  else partyVariation = 20;
   
   Start();
   document.getElementById('video').play();
